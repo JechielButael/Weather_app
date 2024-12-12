@@ -1,0 +1,123 @@
+.search-bar {
+  max-width: initial;
+  position: absolute;
+  top: 0.8rem;
+  left: 50%; /*positions the left edge of the element at the 50%*/
+  transform: translateX(
+    -50%
+  ); /*positions the entire element itself 50% left from it's current position*/
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.search-bar input {
+  flex: content;
+  border: none;
+  outline: none;
+  padding: 0.8rem 0.9rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+input:focus {
+  border: 2px solid rgb(229, 153, 12);
+}
+
+input:focus::placeholder {
+  visibility: hidden;
+}
+
+.search-bar-icons {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  gap: 0.3rem;
+}
+
+.icon-one:hover {
+  transform: scale(1.2);
+}
+
+.icon-two:hover {
+  transform: scale(1.2);
+}
+
+.search-bar .temp-units {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  color: white;
+  gap: 0.3rem;
+  margin-left: 3rem;
+}
+
+.search-bar button {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.unit-one:hover {
+  transform: scale(1.2);
+}
+
+.unit-two:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    position: relative;
+    top: auto;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 50%;
+    transform: translateX(-50%);
+    padding: 0.8rem;
+  }
+  .search-bar input {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .search-bar .temp-units {
+    margin-left: 0.5rem;
+    gap: 0.2rem;
+  }
+
+  .search-bar button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    top: auto;
+    width: 100%;
+    padding: 0.6rem;
+  }
+
+  .search-bar input {
+    font-size: 1rem;
+    padding: 0.5rem 0.9rem;
+  }
+
+  .search-bar .temp-units {
+    margin-left: 1rem;
+  }
+
+  .search-bar button {
+    font-size: 1rem;
+  }
+}

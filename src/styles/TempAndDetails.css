@@ -1,0 +1,145 @@
+.temp-and-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.climate {
+  color: rgba(27, 228, 232, 1);
+}
+
+.detail-icon {
+  margin-right: 0.2rem;
+}
+
+.vertical {
+  margin-top: -3rem;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+}
+.vertical-detail {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.temp-and-details .vertical-details,
+.temp-and-details .horizontal-details {
+  font-size: 1rem;
+}
+
+.current-weather {
+  margin-right: 3rem;
+  font-weight: 600;
+}
+
+.temp-and-details .weather-icon {
+  height: 10rem;
+  width: 10rem;
+}
+
+.temp-and-details .horizontal-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  margin-top: -2rem;
+}
+
+@media (max-width: 1024px) {
+  .temp-and-details .vertical-details,
+  .temp-and-details .horizontal-details {
+    font-size: 1.1rem;
+  }
+  .vertical-detail {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .temp-and-details .horizontal-details {
+    margin-top: 1rem;
+    gap: 5rem;
+  }
+  .current-weather {
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .temp-and-details {
+    margin-top: 2.5rem;
+  }
+
+  .vertical {
+    margin-top: -4rem;
+    font-size: 3rem;
+  }
+
+  .vertical-detail {
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .temp-and-details .vertical-details,
+  .temp-and-details .horizontal-details {
+    font-size: 0.8rem;
+  }
+
+  .current-weather {
+    margin: 4rem 4rem;
+    font-weight: 500;
+  }
+
+  .temp-and-details .weather-icon {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .temp-and-details .horizontal-details {
+    gap: 4rem;
+    margin-top: -2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .temp-and-details {
+    margin-top: 2.5rem;
+  }
+
+  .vertical {
+    margin-top: -3rem;
+    width: auto;
+    font-size: 2.5rem;
+  }
+
+  .vertical-detail {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .temp-and-details .vertical-details,
+  .temp-and-details .horizontal-details {
+    font-size: 0.7rem;
+  }
+
+  .current-weather {
+    margin: 4rem 4rem;
+    font-weight: 500;
+  }
+
+  .temp-and-details .weather-icon {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  .temp-and-details .horizontal-details {
+    gap: 1rem;
+    margin-top: -2rem;
+  }
+}
