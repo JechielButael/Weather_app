@@ -41,6 +41,28 @@
   margin: 0;
 }
 
+@media (max-width: 1440px) {
+  .forecast {
+    width: 95%;
+    margin: -1rem auto;
+  }
+
+  .forecast-ticket p {
+    margin: 0.48rem -0.8rem;
+    font-size: 1.4rem;
+  }
+  .forecast .forecast-title {
+    font-size: 1.5rem;
+  }
+  .forecast-ticket img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .forecast-ticket {
+    margin: 0.1rem 6rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .forecast {
     width: 95%;
@@ -50,6 +72,10 @@
   .forecast-ticket p {
     margin: 0.3rem -0.8rem;
     font-size: 1rem;
+  }
+
+  .forecast-ticket {
+    margin: 0.1rem 4.5rem;
   }
 }
 

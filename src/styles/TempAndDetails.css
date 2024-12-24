@@ -50,6 +50,26 @@
   margin-top: -2rem;
 }
 
+@media (max-width: 1440px) {
+  .temp-and-details .vertical-details,
+  .temp-and-details .horizontal-details {
+    font-size: 1.5rem;
+  }
+  .vertical-detail {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .temp-and-details .horizontal-details {
+    margin-top: 1.5rem;
+    gap: 5.5rem;
+  }
+  .current-weather {
+    margin-right: -3rem;
+    font-weight: 700;
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .temp-and-details .vertical-details,
   .temp-and-details .horizontal-details {
